@@ -1,14 +1,14 @@
-import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Carousel from "./components/Carousel";
-import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Carousel from "./components/Carousel"
+import ContactForm from "./components/ContactForm"
+import Footer from "./components/Footer"
+import './index.css'
 
 function App() {
   const handleNavClick = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-  };
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <div className="font-sans">
@@ -18,7 +18,7 @@ function App() {
       <ContactForm />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,13 +1,26 @@
-import { Button } from "@/components/ui/button";
-
 export default function Header({ onNavClick }) {
   return (
     <header className="sticky top-0 bg-white shadow-md z-50">
       <nav className="flex justify-around p-4">
-        <Button variant="ghost" onClick={() => onNavClick("home")}>Home</Button>
-        <Button variant="ghost" onClick={() => onNavClick("gallery")}>Gallery</Button>
-        <Button variant="ghost" onClick={() => onNavClick("contact")}>Contact</Button>
+        <button
+          onClick={() => onNavClick("home")}
+          className="text-gray-700 hover:text-blue-500"
+        >
+          Home
+        </button>
+        <button
+          onClick={() => onNavClick("gallery")}
+          className="text-gray-700 hover:text-blue-500"
+        >
+          Gallery
+        </button>
+        <button
+          onClick={() => onNavClick("contact")}
+          className="text-gray-700 hover:text-blue-500"
+        >
+          Contact
+        </button>
       </nav>
     </header>
-  );
+  )
 }

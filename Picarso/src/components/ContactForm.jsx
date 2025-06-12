@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 export default function ContactForm() {
   return (
@@ -13,7 +13,7 @@ export default function ContactForm() {
         <input type="email" name="email" placeholder="Email Address" required className="w-full p-3 border rounded-2xl" />
         <input type="tel" name="phone" placeholder="Phone Number" required className="w-full p-3 border rounded-2xl" />
         <textarea name="description" placeholder="Describe your job..." required className="w-full p-3 border rounded-2xl min-h-[150px]" />
-        <Button type="submit" className="w-full">Send</Button>
+        <button type="submit" className="w-full">Send</button>
       </form>
     </section>
   );
